@@ -1,0 +1,17 @@
+{
+  "name": "angular",
+  "version": "1.5.5",
+  "description": "",
+  "main": "server.js",
+  "scripts": {},
+  "author": "",
+  "license": "",
+  "devDependencies": {
+    "body-parser": "^1.15.2",
+    "express": "^4.14.0"
+  },
+  "dependencies": {
+    "chromedriver": "^2.36.0",
+    "selenium-webdriver": "^4.0.0-alpha.1"
+  }
+}

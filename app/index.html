@@ -1,0 +1,83 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Bootstrap core CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
+  </head>
+
+  <body>
+
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark mb-3">
+      <span class="navbar-brand">PhantomJS + VIN code search</span>
+    </nav>
+    
+    <div class="container mb-3">
+        <div class="row">
+          <div class="col-md-12 mb-3">
+              <h6 class="mb-3">VIN code</h6>
+              <div class="input-group">
+                  <input class="form-control" type="text" value = "5TFUU4ENXCX044102" id="id_vin_code">
+              </div>            
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12 mb-3">
+              <h6 class="mb-3">UserName</h6>
+              <div class="input-group">
+                  <input class="form-control" type="text" value="kellerbros2" id="id_user">
+              </div>            
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12 mb-3">
+              <h6 class="mb-3">Password</h6>
+              <div class="input-group">
+                  <input class="form-control" type="text" value="kellershop2" id="id_pass">
+              </div>            
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12 mb-3">
+              <h6 class="mb-3">Search Terms</h6>
+              <div class="input-group">
+                  <input class="form-control" type="text" value="Exhaust" id="id_search_term">
+              </div>            
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12">
+              <button class="btn btn-primary" onclick="onSearchData()">Search</button>
+          </div>
+        </div>
+    </div>
+
+    <h6 class="mb-3">Chilton Data</h6>
+    <table class="table table-hover">
+        <thead>
+            <tr id="id_table_header_chilton">
+            </tr>
+        </thead>
+        <tbody id="id_table_body_chilton">
+        </tbody>
+    </table>
+
+    <h6 class="mb-3">Motor Data</h6>
+    <table class="table table-hover">
+        <thead>
+            <tr id="id_table_header_motor">
+            </tr>
+        </thead>
+        <tbody id="id_table_body_motor">
+        </tbody>
+    </table>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="index.js"></script>
+  </body>
+</html>
